@@ -1,0 +1,11 @@
+<!-- apps/home-test/src/app/opening-sentence/opening-sentence.component.html -->
+<div>
+    <textarea id="sentence-input" [value]="sentence()" (input)="sentence.set($event.target.value)"></textarea>
+    <div>
+      <button (click)="insertPlaceholder('[company_name]')">Company Name</button>
+      <button (click)="insertPlaceholder('[agent_name]')">Agent Name</button>
+      <button (click)="insertPlaceholder('[first_name]')">First Name</button>
+      <button (click)="insertPlaceholder('[last_name]')">Last Name</button>
+    </div>
+</div>
+  
