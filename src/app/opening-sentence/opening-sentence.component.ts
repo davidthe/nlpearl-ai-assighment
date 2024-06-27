@@ -4,8 +4,9 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
   selector: 'app-opening-sentence',
+  standalone: true,
   templateUrl: './opening-sentence.component.html',
-  styleUrls: ['./opening-sentence.component.css'],
+  styleUrls: ['./opening-sentence.component.scss'],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,

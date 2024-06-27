@@ -1,5 +1,5 @@
 {
-  "name": "init",
+  "name": "TestApp",
   "$schema": "node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
@@ -10,7 +10,7 @@
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/init",
+        "outputPath": "dist/TestApp",
         "index": "./src/index.html",
         "main": "./src/main.ts",
         "polyfills": ["zone.js"],
@@ -56,10 +56,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "init:build:production"
+          "buildTarget": "TestApp:build:production"
         },
         "development": {
-          "buildTarget": "init:build:development"
+          "buildTarget": "TestApp:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -67,7 +67,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "init:build"
+        "buildTarget": "TestApp:build"
       }
     },
     "lint": {
@@ -86,7 +86,7 @@
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "init:build",
+        "buildTarget": "TestApp:build",
         "port": 4200,
         "spa": true
       }

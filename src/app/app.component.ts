@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NameInputComponent } from "./name-input/name-input.component";
+import { FormInputComponent } from './form-input/form-input.component';
 
 @Component({
     standalone: true,
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [ RouterModule, NameInputComponent]
+    imports: [ RouterModule, FormInputComponent]
 })
 export class AppComponent {
-  title = 'init';
+  title = 'TestApp';
 }

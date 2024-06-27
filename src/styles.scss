@@ -9,7 +9,12 @@
     }
   }
 
+body, body * {
+  font-family: Inter,sans-serif !important;
+}
+
 :root {
+  
     --color-primary: #202020;
     --color-accent: #5a55f4;
     --color-secondary: #edf2f6;
